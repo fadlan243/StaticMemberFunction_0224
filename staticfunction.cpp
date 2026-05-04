@@ -3,20 +3,13 @@
 using namespace std;
 
 class Mahasiswa {
-    private:
+
+private:
         static int nim;
-    public:
+public:
         int id;
         string nama;
-
-        static int getNim() {
-            return nim;
-        }
-
-        Mahasiswa(string pnama) :nama(pnama) {
-            setID();
-        }
-
+        
         void setID();
         void printAll();
 
@@ -24,6 +17,14 @@ class Mahasiswa {
         static void setNim(int pnim) {
             nim = pnim;
         }
+
+        static int getNim() {
+            return nim;
+        }
+
+        Mahasiswa(string pnama) :nama(pnama) {
+            setID();
+        };
 };
 
 int Mahasiswa::nim = 0;
