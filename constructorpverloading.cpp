@@ -7,5 +7,6 @@ private:
     int nim;
     string nama;
 
+public:
 
 };
